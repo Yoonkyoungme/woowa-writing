@@ -5,7 +5,7 @@
 
 # 웹 성능 최적화의 중요성
 
-### 1. 비즈니스 관점
+### 비즈니스 관점
 
 웹사이트의 로딩 속도는 기업의 비즈니스 성과에 직접적으로 영향을 미친다. 사용자는 웹 페이지 로딩이 몇 초 이상 지연될 경우 이탈할 가능성이 높아지며, 이는 고객 손실로 이어질 수 있다.
 
@@ -16,20 +16,20 @@
 
 실제로 구글의 연구에 따르면, 페이지 로딩 시간이 1초에서 3초로 늘어날 때 페이지 이탈률이 32% 증가하며, 10초로 늘어날 경우 그 비율은 123%까지 급격히 상승한다. 로딩 시간이 길어질수록 방문자가 웹 페이지를 떠나는 비율이 높아진다. 반면에, 빠른 웹 페이지는 더 많은 고객 유입과 유지로 이어진다.
 
-### 2. 검색 엔진 최적화 (SEO)
+#### 검색 엔진 최적화 (SEO)
 
-검색 엔진 최적화 측면에서도 웹 성능은 중요한 역할을 한다. 구글은 2021년부터 웹 성능 지표가 검색 순위에 영향을 미친다고 발표했으며, 이는 로딩 속도가 빠른 사이트가 더 높은 순위에 노출될 가능성이 크다는 것을 의미한다.
+비즈니스 관점에서 SEO는 중요한 마케팅 수단이다. 구글은 2021년부터 웹 성능 지표가 검색 순위에 영향을 미친다고 발표했으며, 이는 로딩 속도가 빠른 사이트가 더 높은 검색 순위에 노출될 가능성이 크다는 것을 의미한다. 빠른 로딩 속도를 유지함으로써 검색 엔진에서의 가시성을 높이고 더 많은 트래픽을 확보할 수 있다.
 
-### 3. 사용자 경험
+#### 사용자 경험
 
-웹 성능은 사용자 경험의 핵심 요소 중 하나다. 사용자는 웹 페이지가 빠르게 로드되기를 기대하며, 이 과정에서 지연이 발생하면 불편함을 느낀다. 빠른 로딩 속도뿐만 아니라 사용자가 실제로 웹 페이지를 탐색하는 과정에서 어떤 순서로 콘텐츠가 표시되는지도 중요한 요소이다. 콘텐츠가 사용자의 시선 이동에 맞춰 자연스럽게 로딩되면, 더 나은 사용자 경험을 제공할 수 있다.
+사용자 경험은 웹 성능과 밀접하게 연결되어 있다. 특히 로딩 속도는 사용자의 첫인상과 사이트에 머무는 시간을 결정하는 중요한 요소이다. 사용자가 페이지 로딩 중 불편함을 느끼지 않도록 콘텐츠가 자연스럽게 표시되고, 탐색 시 지연이 최소화되면 더 나은 사용자 경험을 제공할 수 있다. 이는 고객 만족도를 높이고, 재방문율과 전환율 향상에 기여할 수 있다.
 
 <br />
 <br />
 
 # 웹 성능 최적화하기
 
-프론트엔드 성능은 크게 두 가지 요소로 나눌 수 있다. 하나는 **로딩 성능**이고, 다른 하나는 **렌더링 성능**이다. 로딩 성능은 페이지가 사용자에게 얼마나 빨리 보이는지를 의미하며, 렌더링 성능은 사용자가 웹 페이지와 상호작용할 때 얼마나 빠르고 효율적으로 반응하는지를 나타낸다. 이 두 성능 요소에서 발생하는 문제를 찾아내어 해결하면 웹 성능을 크게 개선할 수 있다.
+프론트엔드 성능은 크게 두 가지 요소로 나눌 수 있다. 하나는 **로딩 성능**이고, 다른 하나는 **렌더링 성능**이다. 로딩 성능은 페이지가 사용자에게 얼마나 빨리 보이는지를 의미하며, 렌더링 성능은 사용자가 웹 페이지와 상호작용할 때 얼마나 빠르고 효율적으로 반응하는지를 나타낸다. 이 두 성능 요소에서 문제를 찾아 해결하면 웹 페이지가 처음 뜨는 속도와 사용자 반응 속도가 빨라진다. 이를 통해 사용자는 페이지에 더 빨리 접속하고 원활하게 이용할 수 있어, 웹사이트의 이탈률을 낮추고 전환율을 높이는 데 도움이 된다.
 
 ## 렌더링 최적화
 
@@ -49,7 +49,7 @@
 
 크기가 큰 JavaScript 파일은 로딩 속도를 저하시킬 수 있다. 이를 해결하기 위해 JavaScript 코드에서 불필요한 공백, 주석, 줄바꿈 등을 제거하고, 변수명과 함수명을 난독화하여 파일 크기를 줄일 수 있다.
 
-### TerserWebpackPlugin
+#### TerserWebpackPlugin
 
 Webpack의 [`TerserWebpackPlugin`](https://webpack.js.org/plugins/terser-webpack-plugin/)은 v5부터 압축과 난독화 작업을 프로덕션 모드에서 자동으로 수행한다. 개발 모드에서는 소스 맵과 디버깅 편의성을 위해 `TerserWebpackPlugin`이 자동으로 설정되지 않는다.
 
@@ -86,11 +86,11 @@ Webpack의 [`TerserWebpackPlugin`](https://webpack.js.org/plugins/terser-webpac
 
 ### 1-2. CSS 압축 및 파일 분리
 
-### CssMinimizerPlugin
+#### CssMinimizerPlugin
 
 JavaScript와 마찬가지로 CSS 파일에도 불필요한 공백과 주석이 포함될 수 있다. 이를 제거하여 파일 크기를 줄이고 웹 페이지의 로딩 속도를 향상시킬 수 있다. CSS 파일의 최소화 과정에서는 Webpack의 [`CssMinimizerPlugin`](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/)을 사용할 수 있다. 이 플러그인은 불필요한 공백, 주석, 줄바꿈 등을 제거해 CSS 파일을 최소화하고, 전송 데이터의 양을 줄여 웹 페이지의 로딩 성능을 개선한다.
 
-### MiniCssExtractPlugin
+#### MiniCssExtractPlugin
 
 CSS 파일을 JavaScript에서 분리하는 것도 중요한 최적화 방법 중 하나이다. CSS를 JavaScript와 함께 번들링하지 않고 별도의 파일로 분리하면 필요한 CSS만 로드하고 불필요한 데이터 전송을 줄일 수 있다. 이를 위해 Webpack의 [`MiniCssExtractPlugin`](https://webpack.js.org/plugins/mini-css-extract-plugin/)을 사용할 수 있다. 이 플러그인은 CSS를 JavaScript에서 분리하여 `<style>` 태그 대신 `<link>` 태그로 HTML에 포함시키는 방식으로 동작한다. 이를 통해 초기 로딩 속도를 더욱 개선할 수 있지만, CSS 파일을 별도로 요청해야 하므로 HTTP 요청 수가 늘어나는 단점이 있다.
 
@@ -98,16 +98,16 @@ CSS 파일을 JavaScript에서 분리하는 것도 중요한 최적화 방법 �
 
 `MiniCssExtractPlugin`은 일반적인 CSS 파일이나 CSS 모듈을 처리하는 데 적합하지만, CSS-in-JS 방식으로 작성된 스타일(Emotion, Styled Components 등)은 이 방식으로 추출할 수 없다. CSS-in-JS는 스타일을 JavaScript 코드 내에서 정의하고 런타임에 생성하기 때문에 빌드 시점에 이를 추출하는 것이 어렵다.
 
-### CssMinimizerPlugin과 MiniCssExtractPlugin 설정 방법
+#### CssMinimizerPlugin과 MiniCssExtractPlugin 설정 방법
 
 아래는 `CssMinimizerPlugin`과 `MiniCssExtractPlugin`을 Webpack에서 설정하는 예시이다.
 
-```bash
+```shell
 npm install css-minimizer-webpack-plugin -D
 npm install mini-css-extract-plugin -D
 ```
 
-```jsx
+```js
 // webpack.config.js
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -141,7 +141,7 @@ module.exports = {
 
 #### Gzip 압축
 
-Gzip은 가장 널리 사용되는 HTTP 압축 방식으로, 1992년에 처음 소개된 이후 거의 모든 주요 웹 브라우저와 서버에서 지원되고 있다. Gzip은 반복적인 문자열 패턴을 찾아 이를 단축된 형태로 저장하는 방식으로 작동한다. Gzip의 장점 중 하나는 높은 호환성이다. 대부분의 웹 브라우저와 서버는 Gzip 압축을 기본적으로 지원하기 때문에 클라이언트가 압축을 요청하지 않더라도 서버는 비압축 데이터를 제공할 수 있다.
+Gzip은 가장 널리 사용되는 HTTP 압축 방식으로, 1992년에 처음 소개된 이후 거의 모든 주요 웹 브라우저와 서버에서 지원되고 있다. Gzip은 반복적인 문자열 패턴을 찾아 이를 단축된 형태로 저장하는 방식으로 작동한다. Gzip의 장점 중 하나는 높은 호환성이다. 대부분의 웹 브라우저와 서버는 Gzip 압축을 기본적으로 지원하기 때문에 클라이언트가 압축을 요청하지 않더라도 서버는 압축하지 않은 데이터를 제공할 수 있다.
 
 #### Brotli 압축
 
@@ -151,7 +151,7 @@ Brotli는 2015년에 구글에서 개발한 HTTP 압축 알고리즘으로, Gzip
 
 Gzip과 Brotli는 모두 텍스트 기반 리소스의 압축에 적합하지만 성능 측면에서는 차이가 있다. Brotli는 Gzip보다 압축률이 더 우수하여 더 작은 파일 크기를 제공할 수 있다. 그러나 호환성 측면에서는 여전히 Gzip이 더 널리 사용된다. 대부분의 브라우저와 서버는 Gzip을 기본적으로 지원하며, Brotli의 지원은 상대적으로 제한적이다.
 
-### 클라이언트 및 서버 간의 압축 협상
+#### 클라이언트 및 서버 간의 압축 협상
 
 서버는 클라이언트가 지원하는 압축 방식을 감지하고, 이에 따라 적절한 리소스를 제공할 수 있다. 클라이언트는 HTTP 요청 헤더의 `Accept-Encoding` 필드를 통해 지원하는 압축 방식을 명시하며, 서버는 이 정보를 기반으로 Gzip 또는 Brotli와 같은 압축된 리소스를 전송한다. 브라우저가 Brotli를 지원하는 경우 서버는 Brotli로 압축된 파일을 제공하고, 그렇지 않은 경우 Gzip으로 대체한다. 이 과정을 통해 클라이언트와 서버는 최적의 압축 방식을 협상할 수 있다.
 
@@ -174,7 +174,7 @@ Content-Encoding: br
 
 이미지 파일은 웹 페이지에서 가장 큰 용량을 차지하는 경우가 많기 때문에, 이를 효율적으로 관리하면 페이지 로딩 시간을 크게 단축할 수 있다. 이미지 최적화의 핵심은 이미지의 용량을 줄이고, 적절한 포맷을 선택하며, 사용자에게 필요한 크기만큼만 제공하는 것이다.
 
-### 적절한 이미지 포맷 선택
+#### 적절한 이미지 포맷 선택
 
 각 이미지 포맷은 고유한 특성과 용도를 가지고 있으며, 이미지 종류에 따라 적절한 포맷을 선택하는 것이 중요하다.
 
@@ -198,11 +198,11 @@ Content-Encoding: br
 
 코드 스플리팅은 애플리케이션의 JavaScript 파일을 여러 개의 청크로 나누어, 사용자가 필요로 할 때에만 해당 청크를 로드하는 기술이다.
 
-### SplitChunksPlugin
+#### SplitChunksPlugin
 
 Webpack에서는 [`SplitChunksPlugin`](https://webpack.kr/plugins/split-chunks-plugin/#root)을 사용하여 공통 모듈을 별도로 청크로 분리하고, 애플리케이션의 크기를 줄일 수 있다.
 
-```jsx
+```js
 // webpack.config.js
 
 module.exports = {
@@ -232,7 +232,7 @@ module.exports = {
 
 이를 해결하려면 Webpack의 설정에서 `output.filename`을 변경하여 각 청크마다 고유한 파일 이름을 지정해야 한다. 예를 들어, [name].[contenthash].js와 같은 형식으로 파일 이름을 설정할 수 있다.
 
-```jsx
+```js
 // webpack.config.js
 
 module.exports = {
@@ -256,14 +256,6 @@ React에서는 `React.lazy`와 `Suspense`를 사용하여 컴포넌트를 지�
 
 ```tsx
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import Home from "./pages/Home/Home";
-import Search from "./pages/Search/Search";
-
-import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
-
-import "./App.css";
 
 const App = () => {
   return (
@@ -300,18 +292,10 @@ const SomeComponent = React.lazy(() => import("./SomeComponent"));
 
 그리고 이를 `Suspense`로 감싸면, 컴포넌트를 비동기적으로 로드하고 로드되는 동안 로딩 화면을 표시하는 방식으로 처리할 수 있다.
 
-```tsx
+```jsx
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { lazy, Suspense } from "react";
-
-const Home = lazy(() => import("./pages/Home/Home"));
-const Search = lazy(() => import("./pages/Search/Search"));
-
-import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
-
-import "./App.css";
 
 const App = () => {
   return (
